@@ -105,13 +105,15 @@ function Register() {
           />
         </div>
 
-        <button className="register-btn" disabled={!isFormValid}>
+        <button   className={`${styles.registerBtn}`}
+
+        disabled={!isFormValid}>
           Register
         </button>
 
        <button
   type="button"
-  className={`${styles.registerBtn} ${styles.loginBtn}`}
+  className={`${styles.loginBtn}`}
   onClick={() => navigate("/")}
 >
   Login
