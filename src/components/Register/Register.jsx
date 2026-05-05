@@ -113,7 +113,7 @@ function Register() {
 
        <button
   type="button"
-  className={`${styles.registerBtn} ${styles.loginBtn}`}
+    className={`${styles.loginBtn}`}
   onClick={() => navigate("/")}
 >
   Login
