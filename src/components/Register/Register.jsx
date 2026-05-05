@@ -65,7 +65,7 @@ function Register() {
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label>Email</label>
           <input
             type="email"
@@ -75,7 +75,7 @@ function Register() {
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label>User Name</label>
           <input
             type="text"
@@ -85,7 +85,7 @@ function Register() {
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label>Password</label>
           <input
             type="password"
@@ -95,7 +95,7 @@ function Register() {
           />
         </div>
 
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label>Confirm Password</label>
           <input
             type="password"
