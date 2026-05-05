@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./Register.module.css";
 
 function Register() {
   const navigate = useNavigate();
@@ -49,11 +50,12 @@ function Register() {
   }
 
   return (
-    <div className="page">
-      <form className="register-card" onSubmit={handleSubmit}>
-        <h2 className="title">Register</h2>
+<div className={styles.page}>
 
-        <div className="form-group">
+<form className={styles.registerCard} onSubmit={handleSubmit}>
+        <h2 className={styles.title}>Register</h2>
+
+        <div className={styles.formGroup}>
           <label>Name</label>
           <input
             type="text"
@@ -107,13 +109,13 @@ function Register() {
           Register
         </button>
 
-        <button
-          type="button"
-          className="register-btn"
-          onClick={() => navigate("/")}
-        >
-          Login
-        </button>
+       <button
+  type="button"
+  className={`${styles.registerBtn} ${styles.loginBtn}`}
+  onClick={() => navigate("/")}
+>
+  Login
+</button>
       </form>
     </div>
   );

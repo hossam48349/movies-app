@@ -1,0 +1,75 @@
+.page {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerCard {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  animation: modalShow 0.3s ease;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.formGroup input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.formGroup input:focus {
+  border-color: #6f42c1;
+}
+
+.registerBtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #6f42c1;
+  color: white;
+  cursor: pointer;
+}
+
+.registerBtn:disabled {
+  background: #aaa;
+}
+
+.loginBtn {
+  background: #212529;
+}
+
+@keyframes modalShow {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
