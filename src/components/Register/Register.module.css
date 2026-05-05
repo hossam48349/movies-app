@@ -60,9 +60,18 @@
 }
 
 .loginBtn {
+  width: 100%;
+  padding: 12px;
   background: #212529;
+  margin-top: 12px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
 }
 
+.loginBtn:hover {
+  background: #000;
+}
 @keyframes modalShow {
   from {
     opacity: 0;
